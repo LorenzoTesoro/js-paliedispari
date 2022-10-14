@@ -2,9 +2,23 @@
 
 /* Strumenti */
 
-// 1. prompt - chiedere all'utente di inserire una parola
-// 2. if/else - per capire se la parola è palindroma
-//    2.1 - come faccio a dirgli di leggere prima da dx a sx e poi                viceversa?      
-// 2.1.1 - 1: converto la parola inserita dall'utente in un array (uso string split() )
-// 2.1.2 - 2: uso array.reverse() per invertire l'ordine dei caratteri
-// 2.1.3 - 3: faccio il check. parola1 = parola1.reverse ?
+// 1. prompt - chiedo all'utente di inserire una parola
+// 2. converto la parola inserita dall'utente in un array (string.split())
+const word = prompt('Inserisci una parola');
+const wordArray = word.split('');
+
+// console.log(wordArray);
+
+// 3. uso array.reverse() per invertire l'ordine dei caratteri dell'array creata
+const reverseWord = wordArray.reverse();
+
+//console.log(reverseWord);
+
+// 4. ricoverto l'array in una stringa per effettuare il controllo
+
+const 
+
+
+// 5: faccio il check. parola1 = parola1.reverse ? (if/else)
+
+if(word == )
