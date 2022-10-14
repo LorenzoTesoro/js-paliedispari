@@ -1,10 +1,11 @@
 /*  Consegna: chiedere all’utente di inserire una parola Creare una funzione per capire se la parola inserita è palindroma */
 
 // chiedo all'utente di inserire una parola
-const userWord = prompt('Inserisci una parola');
+const inputElement = document.querySelector("input");
+const userWord = toString(inputElement);
 
 function palindromeCheck(word) {
-    const wordArray = word.split(''); // converto la parola inserita dall'utente in un array (string.split())
+    const wordArray = word.split(''); // converto la parola inserita dall'utente in un array
     const wordReverted = wordArray.reverse()// inverto l'ordine dei caratteri dell'array creata
     const checkWord = wordReverted.join(""); // riconverto l'array in una stringa
 
@@ -15,4 +16,11 @@ function palindromeCheck(word) {
     return "not palindrome!";
 }
 
-console.log(palindromeCheck(userWord));
+const btnElement = document.querySelector("button");
+
+btnElement.addEventListener('click', function (){
+    console.log(palindromeCheck(userWord));
+})
+
+
+// console.log(palindromeCheck(userWord));
