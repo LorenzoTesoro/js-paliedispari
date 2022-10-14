@@ -14,11 +14,15 @@ const reverseWord = wordArray.reverse();
 
 //console.log(reverseWord);
 
-// 4. ricoverto l'array in una stringa per effettuare il controllo
+// 4. ricoverto l'array in una stringa per effettuare il controllo - uso array.join per non avere le virgole
 
-const 
+const checkWord = reverseWord.join("");
 
-
+// console.log(checkWord);
 // 5: faccio il check. parola1 = parola1.reverse ? (if/else)
 
-if(word == )
+if(word == checkWord){
+    console.log("palindromo!");
+} else (
+    console.log("non palindromo")
+)
